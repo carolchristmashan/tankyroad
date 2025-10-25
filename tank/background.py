@@ -29,6 +29,8 @@ def background_maker():
             else:
                 background.blit(grass,(x+(tile_width/2),y))
 
+    background.blit(small_bush,(10, 100))
+
     background.blit(big_bush,(tile_width+50, 200))
     background.blit(small_bush,(tile_width+50, 160))
 
@@ -39,5 +41,11 @@ def background_maker():
 
     background.blit(big_bush,(tile_width*3+320, 75))
     background.blit(small_bush,(tile_width*3+375, 30))
+
+    background.blit(small_bush,(tile_width*3+320, 400))
+    background.blit(small_bush,(tile_width*3+375, 420))
+
+    background.blit(small_bush,(WIDTH-50, 370))
+
 
     screen.blit(background,(0,0))
