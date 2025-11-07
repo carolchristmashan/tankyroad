@@ -2,8 +2,7 @@ import pygame
 from util import *
 from random import randint
 
-def background_maker():
-    screen = pygame.display.set_mode((WIDTH, HEIGHT))
+def background_maker(screen):
     background = pygame.Surface((WIDTH, HEIGHT))
 
     road = pygame.image.load("game_files/tileGrass_roadNorth.png")
@@ -46,6 +45,7 @@ def background_maker():
     background.blit(small_bush,(tile_width*3+375, 420))
 
     background.blit(small_bush,(WIDTH-50, 370))
-
-
     screen.blit(background,(0,0))
+
+
+
