@@ -5,7 +5,9 @@
 
 ### Screenshot of current game:
 ![screenshot](gamerun.png)
-###### Zombies spawn into random lanes and travel down y axis to "attack" character"
+###### Zombies spawn into random lanes and travel down y axis to "attack" character
+
+
 ![screenshot](gamerun2.png)
 ###### If character collides with zombie, then life count goes down
 
@@ -15,10 +17,10 @@
 - [x] Make a background
 - [x] Make main warrior player character
 - [x] Create zombie enemies and zombie group
-- [o] Randomly spawn in zombies
+- [ ] Randomly spawn in zombies
 - [x] Life count
 - [x] Store high scores and display when character dies
-- [o] Store names with high scores
+- [ ] Store names with high scores
 
 ## Directions
 1. Run the game by typing `python game.py`
