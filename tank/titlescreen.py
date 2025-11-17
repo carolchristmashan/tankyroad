@@ -1,12 +1,14 @@
 import pygame
 from util import *
 
+#title screen when game begins
+
 class Title_Screen():
     def __init__(self):
         self.title_font = pygame.font.Font('Kenney Blocks.ttf', 36)
         self.instructions_font = pygame.font.Font('Kenney Blocks.ttf', 24)
         self.text_color = (255, 255, 255)
-        self.title_surface = self.title_font.render("Welcome to the Jungle", 1, self.text_color)
+        self.title_surface = self.title_font.render("Welcome to the Purge", 1, self.text_color)
         self.instructions_surface = self.instructions_font.render("Press enter to play", 1, self.text_color)
         self.title_rect = self.title_surface.get_rect()
         self.title_rect = self.title_surface.get_rect(center=(WIDTH//2, HEIGHT//2-30))
