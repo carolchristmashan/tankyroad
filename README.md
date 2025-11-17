@@ -15,10 +15,10 @@
 - [x] Make a background
 - [x] Make main warrior player character
 - [x] Create zombie enemies and zombie group
-- [] Randomly spawn in zombies
+- [o] Randomly spawn in zombies
 - [x] Life count
 - [x] Store high scores and display when character dies
-- [] Store names with high scores
+- [o] Store names with high scores
 
 ## Directions
 1. Run the game by typing `python game.py`
