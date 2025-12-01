@@ -6,6 +6,7 @@ from util import *
 class Game_Over():
     def __init__(self, high_scores):
         #display "game over" text
+        self.high_scores = sorted(high_scores, reverse = True)
         self.gameover_font = pygame.font.Font('Kenney Blocks.ttf', 60)
         self.text_color = (255, 255, 255)
         self.gameover_surface = self.gameover_font.render("GAME OVER", 1, self.text_color)
@@ -17,9 +18,7 @@ class Game_Over():
         self.highscore_rect = self.highscore_surface.get_rect(center=(WIDTH//2, (HEIGHT//2)-36))
 
         #display high scores
-        high_scores.sort(reverse=True)
-        self.high_scores = high_scores
-        print(self.high_scores)
+        #print(self.high_scores)
         self.scores_to_display = []
         self.score_font = pygame.font.Font('Kenney Blocks.ttf', 30)
 
